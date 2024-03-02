@@ -1,0 +1,52 @@
+# 3D Cube
+
+#Vertices
+#Bottom
+v -0.25 0.0 0.0 #front left - 1
+v 0.25 0.0 0.0 #front right - 2
+v 0.25 0.0 -0.5 #back right - 3
+v -0.25 0.0 -0.5 #back left - 4
+
+#Back
+v 0.25 0.5 -0.5 #right top - 5
+v -0.25 0.5 -0.5 #left top - 6
+
+#Right
+v 0.25 0.5 0.0 #front top - 7 
+v 0.25 0.5 -0.5 #back top - 8
+
+#Top
+v -0.25 0.5 0.0 #front left - 9
+v -0.25 0.5 -0.5 #back left - 10
+v -0.25 0.5 -0.5
+
+#Left
+# v 
+
+
+# ------------------------------------------------------- #
+
+#Faces 
+#Bottom
+f 1 2 3
+f 3 4 1
+
+#Back
+f 3 5 6 
+f 6 4 3
+
+#right
+f 2 7 3
+f 7 8 3
+
+#top
+f 9 7 8
+f 5 6 9
+
+#left
+f 4 1 9
+f 9 10 4
+
+#Front
+f 1 2 7
+f 7 9 1
